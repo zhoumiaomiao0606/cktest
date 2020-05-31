@@ -1,6 +1,7 @@
 package com.cktest.pojo;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import java.util.Date;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
 import io.swagger.annotations.ApiModel;
@@ -15,7 +16,7 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author 周周
- * @since 2020-05-24
+ * @since 2020-05-31
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -31,6 +32,8 @@ public class User implements Serializable {
     private String emial;
 
     private String password;
+
+    private Date registertime;
 
 
 }
